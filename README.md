@@ -3,7 +3,9 @@
 Aplicación desarrollada en React + Vite como parte del desafío Alkemy. Screening que consume la API Movie Database.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/14180890/189177034-076c2c0b-bdcc-4793-b590-7b26ca6d04d6.png" width="350" title="hover text">
-  <img src="https://user-images.githubusercontent.com/14180890/189011691-4cda9478-f476-41e5-8b69-0480c8a3346f.png" width="350" title="hover text">
-  <img src="https://user-images.githubusercontent.com/14180890/189011728-38902aa7-456b-4f99-9560-71542450db89.png" width="350" title="hover text">
+  <img src="https://user-images.githubusercontent.com/14180890/191144959-3d1145af-ec1f-4764-9a0f-a0b1a1c7c3a0.png" title="hover text">
+  <img src="https://user-images.githubusercontent.com/14180890/191145023-4e7a2685-d2fb-4ee1-b560-5b13c662c8b0.png" title="hover text">
+  <img src="https://user-images.githubusercontent.com/14180890/191145087-f0f03eea-a20d-41b2-82f3-50ba97cd2b74.png" title="hover text">
+  <img src="https://user-images.githubusercontent.com/14180890/191145122-9ca3d17d-4ac8-4a83-acb9-31ddf818c849.png" title="hover text">
+  <img src="https://user-images.githubusercontent.com/14180890/191145193-349634cf-0e4d-4099-9a92-e90a899246c0.png" title="hover text">
 </p>
