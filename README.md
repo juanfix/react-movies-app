@@ -1,6 +1,6 @@
 # react-movies-app
 
-Aplicación desarrollada en React + Vite como parte del desafío Alkemy. Screening que consume la API Movie Database.
+Aplicación desarrollada en React + Vite como parte del desafío Alkemy. Screening que consume la API Movie Database. Instalar dependencias con el comando yarn
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/14180890/191325711-d801b2ae-cefb-4a4c-9fdd-5d2209e2775f.png" title="hover text">
