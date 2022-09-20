@@ -9,7 +9,7 @@ import { MovieCard } from "./MovieCard";
 
 const MySwal = withReactContent(swAlert)
 
-export const MovieSearchList = ({ keyword }) => {
+export const MovieSearchList = ({ keyword, addOrRemoveFromFavs }) => {
     let token = getAuthToken();
 
     const [movieSearchList, setMovieSearchList] = useState([]);
@@ -42,6 +42,7 @@ export const MovieSearchList = ({ keyword }) => {
                     movieSearchList.map((movie) =>  (
                         <MovieCard 
                             key={ movie.id }
+                            addOrRemoveFromFavs={ addOrRemoveFromFavs }
                             { ...movie }
                         />
                     ))

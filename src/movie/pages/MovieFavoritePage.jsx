@@ -1,8 +1,8 @@
 import { MovieFavoriteList } from "../components"
 
-export const MovieFavoritePage = () => {
-  const favsInLocal = localStorage.getItem('favs');
+export const MovieFavoritePage = ({ favorites, addOrRemoveFromFavs }) => {
+
   return (
-    <MovieFavoriteList favsInLocal={ favsInLocal } />
+    <MovieFavoriteList favorites={ favorites } addOrRemoveFromFavs={ addOrRemoveFromFavs } />
   )
 }

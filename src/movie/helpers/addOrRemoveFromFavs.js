@@ -1,9 +1,4 @@
-export const addOrRemoveFromFavs = (
-  e,
-  tempMoviesInFavs,
-  navigate,
-  isFavorite
-) => {
+export const addOrRemoveFromFavs = (e, tempMoviesInFavs) => {
   const parent = e.target.parentElement;
   const poster_path = parent.querySelector('img').getAttribute('src');
   const title = parent.querySelector('h5').innerText;
@@ -23,6 +18,7 @@ export const addOrRemoveFromFavs = (
   if (!movieIsInArray) {
     tempMoviesInFavs.push(movieData);
     localStorage.setItem('favs', JSON.stringify(tempMoviesInFavs));
+    setFavorites(tempMoviesInFavs);
     console.log('Movie added');
   } else {
     let moviesLeft = tempMoviesInFavs.filter(
@@ -30,7 +26,7 @@ export const addOrRemoveFromFavs = (
     );
     console.log(isFavorite);
     localStorage.setItem('favs', JSON.stringify(moviesLeft));
-    if (isFavorite) navigate(0); // Solucion temporal a la eliminacion de favoritos
+    setFavorites(moviesLeft);
     console.log('Movie removed');
   }
 

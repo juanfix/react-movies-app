@@ -1,25 +1,11 @@
-import { useEffect, useState } from "react"
 import { Navigate } from "react-router-dom";
-
 
 import { getAuthToken } from "../../auth";
 
 import { MovieCard } from "./MovieCard";
 
-export const MovieFavoriteList = ({ favsInLocal }) => {
+export const MovieFavoriteList = ({ favorites, addOrRemoveFromFavs }) => {
     let token = getAuthToken();
-
-    const [favorites, setFavorites] = useState([]);
-
-    useEffect(() => {
-        if(favsInLocal !== null) {
-            const favsArray = JSON.parse(favsInLocal)
-            setFavorites(favsArray);
-        }
-        return () => {
-            
-        };
-    }, [favsInLocal]);
 
     return (
         <>
@@ -33,7 +19,7 @@ export const MovieFavoriteList = ({ favsInLocal }) => {
                     favorites.map((movie) =>  (
                         <MovieCard 
                             key={ movie.id }
-                            isFavorite={ true }
+                            addOrRemoveFromFavs={ addOrRemoveFromFavs }
                             { ...movie }
                         />
                     ))

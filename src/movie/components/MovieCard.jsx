@@ -1,7 +1,5 @@
 import { useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
-
-import { addOrRemoveFromFavs } from "../helpers";
+import { Link } from "react-router-dom";
 
 let tempMoviesInFavs;
 
@@ -10,10 +8,7 @@ export const MovieCard = ({
   title,
   overview,
   poster_path,
-  isFavorite }) => {
-
-    const navigate = useNavigate();
-
+  addOrRemoveFromFavs }) => {
 
     useEffect(() => {
       const favMovies = localStorage.getItem('favs'); 
@@ -24,6 +19,7 @@ export const MovieCard = ({
       return () => {
       };
     }, [tempMoviesInFavs]);
+    
   return (
     <div className="col-3">
         <div className="card bg-dark mb-3">
@@ -31,7 +27,7 @@ export const MovieCard = ({
                                                             : './assets/img/no-img.png' } alt="Card image cap" />
             <button 
               className="favorite-btn"
-              onClick={ (e) => addOrRemoveFromFavs(e, tempMoviesInFavs, navigate, isFavorite) }
+              onClick={ (e) => addOrRemoveFromFavs(e, tempMoviesInFavs) }
               data-movie-id={ id }>🖤</button>
             <div className="card-body">
                 <h5 className="card-title">{ (title.length > 25) ? title.substring(0,25) + '...' : title }</h5>
