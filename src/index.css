@@ -1,0 +1,27 @@
+body {
+  background-color: black;
+  color:beige;
+}
+
+button {
+  margin-right: 10px;
+}
+
+a {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.favorite-btn {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: none;
+}
