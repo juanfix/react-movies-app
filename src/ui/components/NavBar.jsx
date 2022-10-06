@@ -48,7 +48,7 @@ export const Navbar = () => {
                 {
                     token && (
                         <a className='nav-link text-success align-items-center'>
-                            Favorite movies: { JSON.parse(localStorage.getItem('favs')).length }
+                            Favorite movies: { localStorage.getItem('favs') ? JSON.parse(localStorage.getItem('favs')).length : '0' }
                         </a>
                     )
                 }

@@ -1,6 +1,25 @@
 # react-movies-app
 
-Aplicación desarrollada en React + Vite como parte del desafío Alkemy. Screening que consume la API Movie Database. Instalar dependencias con el comando yarn
+This project was generated with React JS 18.2.0. It renders some popular movies using Movie Database API.
+
+## See a Demo
+
+You can view how this project is without download it on [Netlify](https://jj-react-movies-app.netlify.app/)
+
+### User credentials
+
+<strong>User:</strong> admin@mail.com
+<strong>Password:</strong> react
+
+## Development server
+
+1. Clone the repository.
+2. Run `yarn` to install dependencies.
+3. Run `yarn dev` to init a dev server.
+4. Navigate to `http://localhost:5173/`.
+5. The appication will automatically reload if you change any of the source files.
+
+## Screenshots
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/14180890/191325711-d801b2ae-cefb-4a4c-9fdd-5d2209e2775f.png" title="hover text">
