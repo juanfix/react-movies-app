@@ -8,7 +8,8 @@ You can view how this project is without download it on [Netlify](https://jj-rea
 
 ### User credentials
 
-<strong>User:</strong> admin@mail.com
+<strong>Email:</strong> admin@mail.com
+<br />
 <strong>Password:</strong> react
 
 ## Development server
