@@ -12,7 +12,7 @@ export const LoginForm = () => {
             { 
             token ? <Navigate to='/movielist'/>
             : ( <>
-                <h2>Formulario del Login</h2>
+                <h2>Login form</h2>
                     <form onSubmit={(e) => submitHandler(e, navigate)}>
                         <div className="form-group">
                             <label>Email</label>
